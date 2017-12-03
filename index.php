@@ -4,7 +4,7 @@
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Smart Tech Supplies</title>
     <meta charset="utf-8">
@@ -15,16 +15,19 @@
 <body>
 
 <div class="container">
-<?php include "header.php";?>
-
+    <header>
+        <?php include "header.php";?>
+    </header>
 
 <!--Main Navigation Menu -->
-<?php include 'mainnaviation.php';?>
-
+    <section id="main-nav">
+        <?php include 'mainnaviation.php';?>
+    </section>
 <!--Main content Menu -->
 
-   <img src ="appliances.jpg" alt="template"  style="display: block;margin: auto;width: 40%;"/>
-
+    <section id="main-content">
+        <img src ="appliances.jpg" alt="template"  style="display: block;margin: auto;width: 40%;"/>
+    </section>
 
 
 <!--footer -->
