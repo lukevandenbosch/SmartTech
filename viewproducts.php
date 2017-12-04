@@ -45,21 +45,21 @@
 	<td>50</td>
 </tr>
 <tr>
-	<td><img src="Pictures/AlienWare.jpg" class="picture1"></td>
-	<td>Alienware 15 R3 AW15R3-7390SLV 15.6"</td>
-	<td>$3,199.99</td>
+	<td><img src="Pictures/dell2.jpg" class="picture1"></td>
+	<td>Dell Inspiron 15 7000 Gaming Series w/ Intel Core</td>
+	<td>$1,599.99</td>
 	<td>50</td>
 </tr>
 <tr>
-	<td><img src="Pictures/AlienWare.jpg" class="picture1"></td>
-	<td>Alienware 15 R3 AW15R3-7390SLV 15.6"</td>
-	<td>$3,199.99</td>
+	<td><img src="Pictures/msi2.jpg" class="picture1"></td>
+	<td>MSI GS Series GS63VR Stealth Pro-422 15.6" Intel Core i7 6th Gen </td>
+	<td>$1,999.99</td>
 	<td>50</td>
 </tr>
 <tr>
-	<td><img src="Pictures/AlienWare.jpg" class="picture1"></td>
-	<td>Alienware 15 R3 AW15R3-7390SLV 15.6"</td>
-	<td>$3,199.99</td>
+	<td><img src="Pictures/acer1.jpg" class="picture1"></td>
+	<td>Acer Acer Aspire Nitro An515-51-58Lk 15.6"</td>
+	<td>$898.00</td>
 	<td>50</td>
 </tr>
 <tr>
@@ -69,21 +69,21 @@
 	<td>35</td>
 </tr>
 <tr>
-	<td><img src="Pictures/AlienWare.jpg" class="picture1"></td>
-	<td>Alienware 15 R3 AW15R3-7390SLV 15.6"</td>
-	<td>$3,199.99</td>
+	<td><img src="Pictures/asus1.jpg" class="picture1"></td>
+	<td>ASUS ROG Zephyrus GX501VS-XS71 15.6"</td>
+	<td>$2,899.99</td>
 	<td>50</td>
 </tr>
 <tr>
-	<td><img src="Pictures/AlienWare.jpg" class="picture1"></td>
-	<td>Alienware 15 R3 AW15R3-7390SLV 15.6"</td>
-	<td>$3,199.99</td>
+	<td><img src="Pictures/asus2.jpg" class="picture1"></td>
+	<td>ASUS ROG GL753VD-DS71 17.3" Intel Core i7 7th Gen</td>
+	<td>$1,204.94</td>
 	<td>50</td>
 </tr>
 <tr>
-	<td><img src="Pictures/AlienWare.jpg" class="picture1"></td>
-	<td>Alienware 15 R3 AW15R3-7390SLV 15.6"</td>
-	<td>$3,199.99</td>
+	<td><img src="Pictures/asus3.jpg" class="picture1"></td>
+	<td>ASUS ROG GL502VS-Q72S-CB 15.6" Intel Core i7 6th Gen</td>
+	<td>$2,599.00</td>
 	<td>50</td>
 </tr>
 </table>
