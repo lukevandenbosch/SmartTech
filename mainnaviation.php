@@ -9,7 +9,7 @@ print '
                 <ul id="primary-menu" class="menu">
                         <li id="menu-item-1" class="menu-item menu-item-1"><a href="index.php">Home</a></li>
                         <li id="menu-item-2" class="menu-item"><a href="viewproducts.php">Products</a></li>
-                        <li id="menu-item-3" class="menu-item"><a href="manageproduct.php">Manage Products</a></li>
+                        <li id="menu-item-3" class="menu-item"><a href="addproduct.php">Add Products</a></li>
                         <li id="menu-item-4" class="menu-item"><a href="contactus.php">Contact</a></li>
                 </ul>
             </div>
