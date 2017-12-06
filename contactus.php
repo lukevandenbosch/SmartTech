@@ -16,18 +16,28 @@
 
 <div class="container">
 <h1>Contact Us</h1><hr>
+<table>
+    <tr>
+    <th>
     <h2>Store Manager:</h2>
-    <h3>Luke John Doe</h3>
-    <h3>70 The Pond Road John Doe</h3>
+    <h3>Luke Vanden Bosch</h3>
+    <h3>70 The Pond Road</h3>
     <h3>North York Toronto</h3>
     <h3>Canada</h3>
-    <br/>
-    <h3>Peter John Doe</h3>
-    <h3>70 The Pond Road John Doe</h3>
+    <h3>647-555-5555</h3>
+    <h3>luke@smarttech.com</h3>
+    </th>
+    <th>
+    <h2>Human Resources:</h2>
+    <h3>Peter Robinson</h3>
+    <h3>71 The Pond Road</h3>
     <h3>North York Toronto</h3>
     <h3>Canada</h3>
-
-
+    <h3>647-554-4444</h3>
+    <h3>peter@smarttech.com</h3>
+    </th>
+    </tr>
+</table>
 <form action="contactus.php" method="post">
     <h3 style="text-align: center">Drop us an Email</h3>
     <table border ="0">
