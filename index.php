@@ -35,41 +35,41 @@
             <tr>
                 <td>
                     <p>
-                        <a href="#" class="aligncenter" aria-hidden="true">
-                        <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
-                            <header>Internet of Things</header>
+                        <a href="" class="aligncenter" aria-hidden="true">
+                        <img src="images/categories/desktop.jpg" alt="Desktop"   width="500" height="300">
+                            <header>Desktop PCS</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a>
+                            <img src="images/categories/external-hdd.jpg" alt="External HDD"    width="500" height="300">
+                            <header>External Storage Devices</header>
                         </a>
                     </p>
                 </td>
                 <td>
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
-                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
-                            <header>Internet of Things</header>
+                            <img src="images/categories/flash-drive.jpg" alt="Flash Drive"    width="500" height="300">
+                            <header>Flash Drives</header>
                         </a>
                     </p>
                 </td>
                 <td>
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
-                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
-                            <header>Internet of Things</header>
+                            <img src="images/categories/headphones.jpg" alt="HeadPhones"   width="500" height="300">
+                            <header>Head Phones</header>
                         </a>
                     </p>
                 </td>
                 <td>
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
-                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
-                            <header>Internet of Things</header>
-                        </a>
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        <a href="#" class="aligncenter" aria-hidden="true">
-                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
-                            <header>Internet of Things</header>
+                            <img src="images/categories/monitor.jpg" alt="Monitors"    width="500" height="300">
+                            <header>Monitors</header>
                         </a>
                     </p>
                 </td>
@@ -78,40 +78,41 @@
                 <td>
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
-                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
-                            <header>Internet of Things</header>
+                            <img src="images/categories/printer.jpg" alt="Printers"    width="500" height="300">
+                            <header>Printers</header>
                         </a>
                     </p>
                 </td>
                 <td>
                     <p>
-                        <a href="#" class="aligncenter">
-                            <img src="images/categories/Laptop.jpg" alt="Laptops"  width="500" height="300"/>
+                            <a href="#" aria-hidden="true" class="aligncenter">
+                            <img src="images/categories/projector.jpg" alt="Projector"  width="500" height="300">
+                            <span>Projectors</span>
+                            </a>
+
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="images/categories/speakers.jpg" alt="Speaker"   width="500" height="300">
+                            <header>Speakers</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="images/categories/tablet.jpg" alt="Tablets"    width="500" height="300">
+                            <header>Tablets</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="images/categories/Laptop.jpg" alt="Laptops"   width="500" height="300">
                             <header>Laptops</header>
-                        </a>
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        <a href="#" class="aligncenter" aria-hidden="true">
-                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
-                            <header>Internet of Things</header>
-                        </a>
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        <a href="#" class="aligncenter" aria-hidden="true">
-                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
-                            <header>Internet of Things</header>
-                        </a>
-                    </p>
-                </td>
-                <td>
-                    <p>
-                        <a href="#" class="aligncenter" aria-hidden="true">
-                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
-                            <header>Internet of Things</header>
                         </a>
                     </p>
                 </td>
@@ -126,28 +127,12 @@
         </div>
         -->
     </section>
-    </section>
 
 
 <!--footer -->
 <?php include 'footer.php';?>
 </div>
-<script>
-    var myIndex = 0;
-    carousel();
 
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-        x[myIndex-1].style.display = "block";
-        setTimeout(carousel, 5000); // Change image every 2 seconds
-    }
-</script>
 </body>
 </html>
 
