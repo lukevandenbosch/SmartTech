@@ -23,20 +23,17 @@
 <tr>
 	<td><img src="images/AlienWare.jpg" class="picture1"></td>
     <td class="td-align-right">
-        <p>
-            Product:</br>
-            Price:</br>
-            Quantity Instock:</br>
+        <p class="nopadding">Product:</p>
+        <p class="nopadding">Price:</p>
+        <p class="nopadding">Quantity Instock:</p>
             &nbsp
-        </p>
+
     </td>
     <td class="td-align-left">
-        <p>
-            Alienware 15 R3 AW15R3-7390SLV 15.6"<br>
-            $3,199.99</br>
-	        50</br>
-            <a href="images/Alienware.jpg">Large</a> | <a href="#">Remove Product</a>
-        </p>
+        <p class="nopadding">Alienware 15 R3 AW15R3-7390SLV 15.6"</p>
+        <p class="nopadding"> $3,199.99</p>
+        <p class="nopadding"> 50</p>
+        <p class="nopadding"><a href="images/Alienware.jpg">Large</a> | <a href="#">Remove Product</a></p>
     </td>
 </tr>
 <tr>
@@ -112,7 +109,7 @@
         <a href="#">Remove Product</a></td>
 </tr>
 <tr>
-	<td><img src="images/asus1.jpg" class="picture1"></td>
+	<td><img src="images/asus2.jpg" class="picture1"></td>
     <td class="td-align-right">Product:</br>
         Price:</br>
         Quantity Instock:</br>
@@ -120,7 +117,7 @@
 	<td class="td-align-left">ASUS ROG Zephyrus GX501VS-XS71 15.6"</br>
 	$2,899.99</br>
 	37</br>
-        <a href="images/asus1.jpg">Large</a> |
+        <a href="images/asus2.jpg">Large</a> |
         <a href="#">Remove Product</a></td>
 </tr>
 <tr>
