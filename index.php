@@ -85,8 +85,8 @@
                 </td>
                 <td>
                     <p>
-                        <a href="#" class="aligncenter" aria-hidden="true">
-                            <img src="images/categories/Laptop.jpg" alt="Laptops"  width="500" height="300">
+                        <a href="#" class="aligncenter">
+                            <img src="images/acer1.jpg" alt="Laptops"  width="500" height="300"/>
                             <header>Laptops</header>
                         </a>
                     </p>
