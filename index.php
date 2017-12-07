@@ -26,7 +26,7 @@
 <!--Main content Menu -->
 
     <section id="main-content">
-        <iframe width="854" height="480" src="https://www.youtube.com/embed/3Wf-aehKbuk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen style="width:100%"></iframe>
+        <iframe  height="480" src="https://www.youtube.com/embed/3Wf-aehKbuk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         <hr>
         <h2>Features Products</h2>
         <hr>
