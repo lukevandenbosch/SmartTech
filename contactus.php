@@ -38,8 +38,11 @@
     </th>
     </tr>
 </table>
+    <fieldset>
+        <legend><h3 style="text-align: center">Drop us an Email</h3></legend>
+
 <form action="contactus.php" method="post">
-    <h3 style="text-align: center">Drop us an Email</h3>
+
     <table border ="0">
         <tr>
             <td class="headertext">Name</td>
@@ -59,6 +62,7 @@
         </tr>
     </table>
 </form
+    </fieldset>
 </div>
 <footer>
 <?php include 'footer.php';?>
