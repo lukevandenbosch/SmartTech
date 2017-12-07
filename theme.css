@@ -1023,6 +1023,10 @@ a.cta-button-primary:hover,
     padding: 0;
 }
 
+.mysides
+{
+    width:400px;
+}
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
