@@ -2585,195 +2585,23 @@ h2.error-title {
         width: 100%;
     }
 
-    .notice-inner-wrap {
-        width: 100%;
-    }
-
-    #quick-contact .top-news > p {
-        float: none;
-        min-width: 100%;
-        text-align: center;
-        margin:0;
-    }
-
-    #quick-contact {
-        width: 100%;
-    }
-
-    #quick-contact .top-news {
-        text-align: center;
-        width: 100%;
-    }
-
-    .quick-links a.links-btn {
-        width: 100%;
-    }
-
-    .quick-links {
-        float: left;
-        width: 100%;
-    }
-
-    .quick-links > ul {
-        width: 100%;
-    }
-
-    #quick-contact .top-news-title {
-        display: block;
-        float: left;
-        margin-right: 10px;
-    }
-
-    #quick-contact .top-news > p {
-        float: none;
-        margin-bottom: 0;
-        margin-right: 0;
-        margin-top: 0;
-        min-width: inherit;
-        text-align: left;
-    }
-    .site-layout-boxed #footer-widgets {
-        width: 111%;
-    }
-}
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and ( max-width:610px ) {
-    #page #masthead {
-        background-position: center top;
-        background-size: 100% auto;
-        padding-top: 95px;
-    }
-    .scrollup {
-        bottom: 15px;
-    }
-}
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and ( max-width: 479px ) {
-    .site-layout-boxed #footer-widgets {
-        width: 117%;
-    }
-    #page #masthead {
-        background-position: center top;
-        background-size: 100% auto;
-        padding-top: 60px;
-    }
-    #main-slider .cycle-caption {
-        left: 13%;
-        padding: 5px 10px;
-        top: 55px;
-        width: 62%;
-    }
-
-    #main-slider .cycle-caption p {
-        display: none;
-        font-size: 12px;
-        max-height: 34px;
-        overflow: hidden;
-    }
-
-    #main-slider .cycle-caption h3 {
-        font-size: 14px;
-        margin: 0;
-        max-height: 32px;
-        overflow: hidden;
-    }
-
-    #main-slider .cycle-prev,
-    #main-slider .cycle-next {
-        bottom: 27%;
-    }
-
-    .footer-widget-area {
-        width: 100%;
-    }
-
-    #main-slider .cycle-pager {
-        bottom: -3px;
-    }
-
-    #quick-contact li {
-        margin: 10px 0;
-        padding: 0 6px;
-        font-size: 12px;
-    }
-
-    .quick-links {
-        width: 100%;
-    }
-
-    .quick-links a.links-btn {
-        display: block;
-        width: 100%;
-    }
-
-    #quick-contact .top-news > p {
-        font-size: 12px;
-        margin: 0;
-    }
-
-    .site-title {
-        clear: none;
-        font-size: 26px;
-    }
-
-    .quick-links > ul {
-        width: 100%;
-    }
-
-    .site-description {
-        font-size: 12px;
-        letter-spacing: 1.4px;
-        margin-bottom: 0;
-    }
-
-    #featured-content .inner-wrapper article,
-    .news-post {
-        width: 100%;
-    }
-
-    #main-slider .cycle-pager {
-        bottom: -29px;
-    }
-
-    #main-slider .cycle-prev::after {
-        padding: 15px 15px 15px 3px;
-    }
-
-    #main-slider .cycle-next::after {
-        padding: 15px 5px 15px 15px;
-    }
-
-    .navigation .nav-links > div a {
-        display: block;
-    }
-
-    .navigation .nav-links > div.nav-next,
-    .navigation .nav-links > div.nav-previous {
-        display: block;
-        float: none;
-        margin: 10px 0;
-        text-align: center;
-        width: 100%;
-    }
-
-    #main-slider .cycle-prev:hover,
-    #main-slider .cycle-prev {
-        left: -1px;
-    }
-
-    #main-slider .cycle-next:hover,
-    #main-slider .cycle-next {
-        right: 0;
-    }
-
-    #main-slider .cycle-prev::after {
-        padding: 10px 15px 10px 12px;
-    }
-
-    #main-slider .cycle-next::after {
-        padding: 10px 10px 10px 15px;
-    }
 
 }
+iframe {
+    width: 100%;
+}
 
+/* Giving Table the alternating colour */
+.ItemTable tr:nth-child(odd)		{ background-color:#eee; }
+.ItemTable tr:nth-child(even)		{ background-color:#fff; }
+
+
+
+.td-align-right {
+    text-align: right;
+}
+
+.td-align-left
+{
+    text-align: left;
+}
