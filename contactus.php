@@ -18,24 +18,31 @@
 <h1>Contact Us</h1><hr>
 <table>
     <tr>
-    <th>
-    <h2>Store Manager:</h2>
-    <h3>Luke Vanden Bosch</h3>
-    <h3>70 The Pond Road</h3>
-    <h3>North York Toronto</h3>
-    <h3>Canada</h3>
-    <h3>647-555-5555</h3>
-    <h3>luke@smarttech.com</h3>
-    </th>
-    <th>
-    <h2>Human Resources:</h2>
-    <h3>Peter Robinson</h3>
-    <h3>71 The Pond Road</h3>
-    <h3>North York Toronto</h3>
-    <h3>Canada</h3>
-    <h3>647-554-4444</h3>
-    <h3>peter@smarttech.com</h3>
-    </th>
+    <th><h2>Store Manager:</h2></th>
+        <th><h2>Human Resources:</h2></th>
+    </tr>
+    <tr>
+        <td>
+                 <p class="address">
+                     Luke Vanden Bosch</br>
+                     70 The Pond Road</br>
+                     North York Toronto</br>
+                     Canada</br>
+                     647-555-5555</br>
+                     luke@smarttech.com</br>
+                 </p>
+        </td>
+
+        <td>
+                <p class="address">
+                    Peter Robinson</br>
+                    71 The Pond Road</br>
+                    North York Toronto</br>
+                    Canada</br>
+                    647-554-4444</br>
+                    peter@smarttech.com</br>
+                 </p>
+          </td>
     </tr>
 </table>
     <fieldset>
