@@ -28,14 +28,103 @@
     <section id="main-content">
         <iframe  height="480" src="https://www.youtube.com/embed/3Wf-aehKbuk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
         <hr>
-        <h2>Features Products</h2>
+        <h2>Product Category</h2>
         <hr>
+
+        <table id="actual-table">
+            <tr>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                        <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
+                            <header>Internet of Things</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
+                            <header>Internet of Things</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
+                            <header>Internet of Things</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
+                            <header>Internet of Things</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
+                            <header>Internet of Things</header>
+                        </a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
+                            <header>Internet of Things</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="images/categories/Laptop.jpg" alt="Laptops"  width="500" height="300">
+                            <header>Laptops</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
+                            <header>Internet of Things</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
+                            <header>Internet of Things</header>
+                        </a>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <a href="#" class="aligncenter" aria-hidden="true">
+                            <img src="http://www.giveupandusetables.com/wp-content/uploads/2017/09/inphone-500x300.png" alt="Advantages of Internet Phones"  width="500" height="300">
+                            <header>Internet of Things</header>
+                        </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <!--
         <div class="w3-content w3-section">
             <img class="mySlides" src="images/pc1.jpg" style="width:540px" alt="1">
             <img class="mySlides" src="images/pc2.jpg" style="width:540px" alt="2">
             <img class="mySlides" src="images/printer1.jpg" style="width:540px" alt="3">
             <img class="mySlides" src="images/appliances.jpg" style="width:540px" alt="4">
         </div>
+        -->
     </section>
     </section>
 
