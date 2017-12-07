@@ -1,8 +1,3 @@
-<?php
-
-//echo "This is our Main Page";
-
-?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -26,7 +21,7 @@
 <!--Main content Menu -->
 
     <section id="main-content">
-        <img src ="appliances.jpg" alt="template"  style="display: block;margin: auto;width: 40%;"/>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/3Wf-aehKbuk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </section>
 
 
@@ -36,4 +31,3 @@
 
 </body>
 </html>
-
