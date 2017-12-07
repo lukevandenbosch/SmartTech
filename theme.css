@@ -2599,9 +2599,11 @@ iframe {
 
 .td-align-right {
     text-align: right;
+    font-weight: bold;
 }
 
 .td-align-left
 {
     text-align: left;
+    font-weight: normal;
 }
