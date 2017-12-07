@@ -91,9 +91,7 @@ strong {
     font-weight: bold;
 }
 
-dfn {
-    font-style: italic;
-}
+
 
 mark {
     background: #ff0;
@@ -213,8 +211,9 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
+    border: 5px solid #c0c0c0;
+    margin: 0 10px;
+    margin-bottom: 5%;
     padding: 0.35em 0.625em 0.75em;
 }
 

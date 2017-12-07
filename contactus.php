@@ -39,22 +39,22 @@
     </tr>
 </table>
     <fieldset>
-        <legend><h3 style="text-align: center">Drop us an Email</h3></legend>
+        <legend><h3>Drop us an Email</h3></legend>
 
 <form action="contactus.php" method="post">
 
     <table border ="0">
         <tr>
             <td class="headertext">Name</td>
-            <td class="td-element"> <input type="text" name="name"></td>
+            <td class="td-element"> <input type="text" name="name" placeholder=" Eg. John Doe"></td>
         </tr>
         <tr>
             <td class="headertext">E-mail</td>
-            <td class="td-element"> <input type="text" name="email"></td>
+            <td class="td-element"> <input type="text" name="email" placeholder=" Eg. email@example.com"></td>
         </tr>
         <tr>
             <td class="headertext">Message:</td>
-            <td class="td-element"> <textarea rows="4" cols="10"></textarea></td>
+            <td class="td-element"> <textarea rows="4" cols="10" placeholder=" Type your message here."></textarea></td>
         </tr>
         <tr>
             <td class="headertext"></td>
