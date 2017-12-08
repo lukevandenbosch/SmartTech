@@ -26,7 +26,10 @@
 <!--Main content Menu -->
 
     <section id="main-content">
-        <iframe  height="480" src="https://www.youtube.com/embed/3Wf-aehKbuk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <iframe  height="480" src="https://www.youtube.com/embed/3Wf-aehKbuk?mute=1;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <audio autoplay>
+            <source src="sound/Calm-ocean-sounds-calming-seas.mp3" type="audio/mpeg">
+        </audio>
         <hr>
         <h2>Product Category</h2>
         <hr>
