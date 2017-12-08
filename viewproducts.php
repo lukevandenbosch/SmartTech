@@ -37,8 +37,8 @@
 </tr>
 <tr>
 	<td><img src="images/dell1.jpg" class="picture1"></td>
-    <td class="td-align-right">Product:</br>
-        Price:</br>
+    <td class="td-align-right">Product:<br/>
+        Price:<br/>
         Quantity Instock:</br>
         &nbsp</td>
     <td class="td-align-left">Dell Inspiron 15 5000 Gaming (AMD) Laptop 15.6 inch"</br>
