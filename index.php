@@ -36,7 +36,7 @@
                     <p>
                         <a href="" class="aligncenter" aria-hidden="true">
                         <img src="images/categories/desktop.jpg" alt="Desktop"   width="500" height="300">
-                            <span>Desktop PCS</span>
+                            <div class ="categoryheadingbackground">Desktop PCS</div>
                         </a>
                     </p>
                 </td>
@@ -44,7 +44,7 @@
                     <p>
                         <a>
                             <img src="images/categories/external-hdd.jpg" alt="External HDD"    width="500" height="300">
-                            <span>External Storage Devices</span>
+                            <div class ="categoryheadingbackground">External Storage Devices</div>
                         </a>
                     </p>
                 </td>
@@ -52,7 +52,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/flash-drive.jpg" alt="Flash Drive"    width="500" height="300">
-                            <span>Flash Drives</span>
+                            <div class ="categoryheadingbackground">Flash Drives</div>
                         </a>
                     </p>
                 </td>
@@ -60,7 +60,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/headphones.jpg" alt="HeadPhones"   width="500" height="300">
-                            <span>Head Phones</span>
+                            <div class ="categoryheadingbackground">Head Phones</div>
                         </a>
                     </p>
                 </td>
@@ -68,7 +68,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/monitor.jpg" alt="Monitors"    width="500" height="300">
-                            <span>Monitors</span>
+                            <div class ="categoryheadingbackground">Monitors</div>
                         </a>
                     </p>
                 </td>
@@ -78,7 +78,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/printer.jpg" alt="Printers"    width="500" height="300">
-                            <span>Printers</span>
+                            <div class ="categoryheadingbackground">Printers</div>
                         </a>
                     </p>
                 </td>
@@ -86,7 +86,7 @@
                     <p>
                             <a href="#" aria-hidden="true" class="aligncenter">
                             <img src="images/categories/projector.jpg" alt="Projector"  width="500" height="300">
-                            <span>Projectors</span>
+                            <div class ="categoryheadingbackground">Projectors</div>
                             </a>
 
                     </p>
@@ -95,7 +95,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/speakers.jpg" alt="Speaker"   width="500" height="300">
-                            <span>Speakers</span>
+                            <div class ="categoryheadingbackground">Speakers</div>
                         </a>
                     </p>
                 </td>
@@ -103,7 +103,7 @@
                     <p>
                         <a href="#" class="aligncenter" >
                             <img src="images/categories/tablet.jpg" alt="Tablets"    width="500" height="300">
-                            <span>Tablets</span>
+                            <div class ="categoryheadingbackground">Tablets</div>
                         </a>
                     </p>
                 </td>
@@ -111,7 +111,7 @@
                     <p>
                         <a href="#" class="aligncenter">
                             <img src="images/categories/Laptop.jpg" alt="Laptops"   width="500" height="300">
-                            <span>Laptops</span>
+                            <div class ="categoryheadingbackground">Laptops</div>
                         </a>
                     </p>
                 </td>

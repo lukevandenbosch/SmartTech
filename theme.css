@@ -1014,3 +1014,15 @@ iframe {
     widith:180px;
     height:120px;
 }
+
+.categoryheadingbackground
+{
+
+   background-color: #15305b;
+    color: #ffffff;
+    width: 100%;
+}
+.categoryheadingbackground a
+{
+    color: #ffffff;
+}
