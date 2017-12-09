@@ -7,12 +7,11 @@ $var ='<div  id="footer-widgets" ><div class="container"><div class="inner-wrapp
                 <button type="button" class="btn btn-danger">Subscribe now</button>
              </form>
                  <br/>
-    <p>Smart Tech Copyright 2017</p>
-        </footer>
+         </footer>
     </div>
     </div>
     </div>';
-$var =$var."<p style=\"text-align:center\">Copyright &copy; 1999-" . date("Y") . " SmartTech.com</p>";
+$var =$var."<p style=\"text-align:center\" class=\"copyright\"'>Smart Tech Copyright &copy; " . date("Y") . " SmartTech.com</p>";
 
 echo $var;
 ?>
