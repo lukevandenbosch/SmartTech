@@ -1,10 +1,5 @@
-<?php
-
-//echo "This is our Main Page";
-
-?>
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Smart Tech Supplies</title>
     <meta charset="utf-8">
@@ -15,18 +10,19 @@
 <body>
 
 <div class="container">
-    <header>
+
+    <section id="header">
         <?php include "header.php";?>
-    </header>
+    </section>
 
 <!--Main Navigation Menu -->
-    <section id="main-nav">
+    <section id="mainnavigation">
         <?php include 'mainnaviation.php';?>
     </section>
-<!--Main content Menu -->
 
+<!--Main content Menu -->
     <section id="main-content">
-        <iframe title ="Video Player" height="480" src="https://www.youtube.com/embed/3Wf-aehKbuk?mute=1;autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <iframe title ="Video Player" height="480" src="https://www.youtube.com/embed/3Wf-aehKbuk?mute=1;autoplay=1"  allowfullscreen></iframe>
         <audio autoplay>
             <source src="sound/Calm-ocean-sounds-calming-seas.mp3" type="audio/mpeg">
         </audio>
@@ -40,7 +36,7 @@
                     <p>
                         <a href="" class="aligncenter" aria-hidden="true">
                         <img src="images/categories/desktop.jpg" alt="Desktop"   width="500" height="300">
-                            <header>Desktop PCS</header>
+                            <span>Desktop PCS</span>
                         </a>
                     </p>
                 </td>
@@ -48,7 +44,7 @@
                     <p>
                         <a>
                             <img src="images/categories/external-hdd.jpg" alt="External HDD"    width="500" height="300">
-                            <header>External Storage Devices</header>
+                            <span>External Storage Devices</span>
                         </a>
                     </p>
                 </td>
@@ -56,7 +52,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/flash-drive.jpg" alt="Flash Drive"    width="500" height="300">
-                            <header>Flash Drives</header>
+                            <span>Flash Drives</span>
                         </a>
                     </p>
                 </td>
@@ -64,7 +60,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/headphones.jpg" alt="HeadPhones"   width="500" height="300">
-                            <header>Head Phones</header>
+                            <span>Head Phones</span>
                         </a>
                     </p>
                 </td>
@@ -72,7 +68,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/monitor.jpg" alt="Monitors"    width="500" height="300">
-                            <header>Monitors</header>
+                            <span>Monitors</span>
                         </a>
                     </p>
                 </td>
@@ -82,7 +78,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/printer.jpg" alt="Printers"    width="500" height="300">
-                            <header>Printers</header>
+                            <span>Printers</span>
                         </a>
                     </p>
                 </td>
@@ -99,7 +95,7 @@
                     <p>
                         <a href="#" class="aligncenter" aria-hidden="true">
                             <img src="images/categories/speakers.jpg" alt="Speaker"   width="500" height="300">
-                            <header>Speakers</header>
+                            <span>Speakers</span>
                         </a>
                     </p>
                 </td>
@@ -107,7 +103,7 @@
                     <p>
                         <a href="#" class="aligncenter" >
                             <img src="images/categories/tablet.jpg" alt="Tablets"    width="500" height="300">
-                            <header>Tablets</header>
+                            <span>Tablets</span>
                         </a>
                     </p>
                 </td>
@@ -115,27 +111,20 @@
                     <p>
                         <a href="#" class="aligncenter">
                             <img src="images/categories/Laptop.jpg" alt="Laptops"   width="500" height="300">
-                            <header>Laptops</header>
+                            <span>Laptops</span>
                         </a>
                     </p>
                 </td>
             </tr>
         </table>
-        <!--
-        <div class="w3-content w3-section">
-            <img class="mySlides" src="images/pc1.jpg" style="width:540px" alt="1">
-            <img class="mySlides" src="images/pc2.jpg" style="width:540px" alt="2">
-            <img class="mySlides" src="images/printer1.jpg" style="width:540px" alt="3">
-            <img class="mySlides" src="images/appliances.jpg" style="width:540px" alt="4">
-        </div>
-        -->
+
     </section>
 
 
-<!--footer -->
-<?php include 'footer.php';?>
+    <section id="footer">
+        <?php include 'footer.php';?>
+    </section>
 </div>
-
 </body>
 </html>
 

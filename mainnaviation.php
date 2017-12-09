@@ -4,7 +4,7 @@ print '
 <!--Main Navigation Menu -->
 <div id="main-nav" class="clear-fix">
         <div class ="container">
-        <nav id="site-navigation" class="main-navigation" role="navigation">
+        <nav id="site-navigation" class="main-navigation">
             <div class="wrap-menu-content">
                 <ul id="primary-menu" class="menu">
                         <li id="menu-item-1" class="menu-item menu-item-1"><a href="index.php">Home</a></li>
