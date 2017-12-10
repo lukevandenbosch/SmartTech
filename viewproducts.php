@@ -31,7 +31,7 @@
         <p class="nopadding">Alienware 15 R3 AW15R3-7390SLV 15.6"</p>
         <p class="nopadding"> $3,199.99</p>
         <p class="nopadding"> 50</p>
-        <p class="nopadding"><a href="images/Alienware.jpg">Large</a> | <a href="#">Remove Product</a></p>
+        <p class="nopadding"><a href="images/AlienWare.jpg">Large</a> | <a href="#">Remove Product</a></p>
     </td>
 </tr>
 <tr>
@@ -79,7 +79,7 @@
 	<td class="td-align-left">MSI GS Series GS63VR Stealth Pro-422 15.6" Intel Core i7 6th Gen <br/>
 	$1,999.99<br/>
 	78<br/>
-        <a href="images/msi12.jpg">Large</a> |
+        <a href="images/msi2.jpg">Large</a> |
         <a href="#">Remove Product</a></td>
 </tr>
 <tr>
