@@ -1,3 +1,48 @@
+<?php
+
+#include "inc\DbConnection.php";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') //to check if there was a post.
+{
+
+
+    $name = $_POST['name'];
+    $category = $_POST['category'];
+    $price = $_POST['price'];
+    $quantity = $_POST['quantity'];
+    $imagepath = $_POST['imagepath'];
+
+    foreach($_POST  as $key => $value)
+    {
+        echo "$key -> $value";
+    }
+
+    //Validation
+
+
+
+    $query = "INSERT INTO products(Name,Cateogry,Price,Qty,ImagePath) values('$name','$category',$price',$quantity,'$imagepath')";
+
+    print "<br/>";
+    print $query;
+
+    $database = new DbConnection('zenit.senecac.on.ca', 'uli705_173a29', 'crtw9356', 'uli705_173a29');
+
+    print "<br/>";
+    print $database;
+
+   $var = $database->OpenConnection();
+
+    print "<br/>";
+    print "$var";
+
+    $rslt = $database->ExecuteUpdateInsertDelete();
+
+    print "$var";
+    echo "$rslt inserted Succesfull";
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +74,7 @@
             <h2>Adding New Products</h2>
             <hr>
             <div id="updateproduct">
-                <form  id="addform" name="addform" method="post" action="addform.php">
+                <form  id="addform" name="addform" method="POST" action="addproduct.php">
                     <table>
                         <tr>
                             <td class="headertext">Name</td>
@@ -49,13 +94,15 @@
                         </tr>
                         <tr>
                             <td class="headertext">Picture</td>
-                            <td class="td-element"><input type="button" value="Upload Picture"/></td>
+                            <td class="td-element"><input type="button" value="Upload Picture"/><br/>
+                            <td class="td-element"><input type="text" name="imagepath" placeholder=""/>
+                            </td>
                         </tr>
                         <tr>
 
                             <td colspan="2">
                                 <hr>
-                                <input type="button" value="Add Product"/></td>
+                                <input type="submit" value="Add Product"/></td>
 
                         </tr>
                     </table>
