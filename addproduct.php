@@ -33,15 +33,19 @@
                     <table>
                         <tr>
                             <td class="headertext">Name</td>
-                            <td class="td-element"><input type="text" placeholder="eg. MacBook Pro"/></td>
+                            <td class="td-element"><input type="text" name="name" placeholder="eg. MacBook Pro"/></td>
+                        </tr>
+                        <tr>
+                            <td class="headertext">Category</td>
+                            <td class="td-element"><input type="text" name="category" placeholder="eg. Laptop"/></td>
                         </tr>
                         <tr>
                             <td class="headertext">Price</td>
-                            <td class="td-element"><input type="text" placeholder="eg. 1999"/></td>
+                            <td class="td-element"><input type="text" name="price" placeholder="eg. 1999"/></td>
                         </tr>
                         <tr>
                             <td class="headertext">Quantity Instock</td>
-                            <td class="td-element"><input type="text" placeholder="eg. 25"/></td>
+                            <td class="td-element"><input type="text" name="quantity" placeholder="eg. 25"/></td>
                         </tr>
                         <tr>
                             <td class="headertext">Picture</td>
