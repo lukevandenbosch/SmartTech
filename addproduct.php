@@ -29,7 +29,7 @@
             <h2>Adding New Products</h2>
             <hr>
             <div id="updateproduct">
-                <form>
+                <form  id="addform" name="addform" method="post" action="addform.php">
                     <table>
                         <tr>
                             <td class="headertext">Name</td>
