@@ -1,0 +1,51 @@
+CREATE TABLE products
+(
+Id INT(6) ZEROFILL AUTO_INCREMENT,
+Name VARCHAR(20) NOT NULL,
+Price FLOAT(6,2) NOT NULL,
+Qty INT(6) NOT NULL,
+Category VARCHAR(30),
+ImagePath VARCHAR(100),
+PRIMARY KEY (Id)
+);
+
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('Alienware 15 R3 AW15R3-7390SLV 15.6',3199.99,50,'Laptop','images/AlienWare.jpg');
+
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('Dell Inspiron 15 5000 Gaming (AMD) Laptop 15.6 inch',899.99,92,'Laptop','images/dell1.jpg');
+
+=======================
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('MSI GL62M 7REX-1067 15.6',1499.99,84,'Laptop','images/msi1.jpg');
+
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('Dell Inspiron 15 7000 Gaming Series w/ Intel Core',1599.99,88,'Laptop','images/dell2.jpg');
+
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('MSI GS Series GS63VR Stealth Pro-422 15.6 Intel Core i7 6th Gen',1999.99,78,'Laptop','images/msi2.jpg');
+
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('Acer Acer Aspire Nitro An515-51-58Lk 15.6',898.00,42,'Laptop','images/acer1.jpg');
+
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('Surface Laptop',1199.99,35,'Laptop','images/surface1.jpg');
+
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('ASUS ROG Zephyrus GX501VS-XS71 15.6',2899.99,37,'Laptop','images/asus2.jpg');
+
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('ASUS ROG GL753VD-DS71 17.3 Intel Core i7 7th Gen',1204.94,15,'Laptop','images/asus1.jpg');
+
+INSERT INTO products
+(Name,Price,Qty,Category,ImagePath)
+VALUES ('ASUS ROG GL502VS-Q72S-CB 15.6 Intel Core i7 6th Gen',2599.00,56,'Laptop','images/asus3.jpg');
