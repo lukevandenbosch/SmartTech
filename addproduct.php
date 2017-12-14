@@ -1,7 +1,11 @@
 <?php
 
-//phpinfo();
+//Include database class
+include "inc/MySQLConnection.php";
+$uploaddir = '/home/peterrobinson/public_html/LP-Tech/images/';
 
+
+/*
 echo ini_get('display_errors');
 
 if (!ini_get('display_errors')) {
@@ -9,160 +13,91 @@ if (!ini_get('display_errors')) {
 }
 echo ini_get('display_errors');
 
+*/
 
-include "inc/DbConnection.php";
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') //to check if there was a post.
 {
+     //Instaniate Class
+    $uploadfile = $uploaddir . basename($_FILES['file']['name']);
+    $validextensions = array("JPEG", "JPG", "PNG","GIF");
+    $temporary = explode(".", $_FILES["file"]["name"]);
+    $file_extension = strtoupper(end($temporary));
 
-   // load the values into variables: host, username, passwd, database
-    /*
-  $host="db-mysql.zenit";
-  $db_user="uli705_173a20";
-  $db_password="csHE3669";
-  $database="uli705_173a20";
-    */
 
-    $host="50.62.177.37";
-    $port="3306";
-    $db_user="senecauli";
-    $db_password="P@ssw0rd";
-    $database="smarttech";
 
-    // Connect to database server.
-    $con = mysqli_connect($host,$db_user,$db_password,$database,$port);
 
-        // Check connection
-    if (mysqli_connect_errno())
-    {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    //Handing Image Upload
+
+    if ((($_FILES["file"]["type"] == "image/png") || ($_FILES["file"]["type"] == "image/jpg") || ($_FILES["file"]["type"] == "image/jpeg")) && in_array($file_extension, $validextensions)) {
+
+        if ($_FILES["file"]["error"] > 0) {
+            echo "Return Code: " . $_FILES["file"]["error"] . "<br/><br/>";
+        } else {
+
+            if (file_exists("images/" . $_FILES["file"]["name"])) {
+                echo $_FILES["file"]["name"] . " <span id='invalid'><b>already exists.</b></span> ";
+            } else {
+                if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile)) {
+                    echo "File is valid, and was successfully uploaded.\n";
+
+
+                    //Database Access;
+
+
+
+
+
+                } else {
+                    echo "Possible file upload attack!\n";
+                }
+            }
+        }
     }else
     {
-        echo 'Connected successfully';
+        echo "<p class =\"error\">Invalid file. </p>";
+        return;
 
+    }
+
+
+    //Database Access
+
+     $connection = new MySQLConnection("default");  //Peter Database
+    //$connection = new MySQLConnection("peter");  //Peter Database
+    //$connection = new MySQLConnection("luke");  //Peter Database
+
+    //Opening the db Connection
+    $state = $connection->OpenConnection();
+
+
+    if($state) //if connection is succesfull proceed with getting the informatin from the form and writing to the db.
+    {
+
+        //get post values from form.
         $name = $_POST['name'];
         $category = $_POST['category'];
         $price = $_POST['price'];
         $quantity = $_POST['quantity'];
-        $imagepath ="images/asus1.jpg"; // $_POST['imagepath'];
+        $imagepath =$uploadfile;
 
-        foreach($_POST  as $key => $value)
-        {
-             echo "$key -> $value";
-        }
 
         $query = "INSERT INTO products(Name,Category,Price,Qty,ImagePath) values('$name','$category',$price,$quantity,'$imagepath')";
+        $rowsaffected = $connection->ExecuteUpdateInsertDelete($query);
 
-        print "<br/>";
-        print $query;
-
-
-        $rowsaffected=mysqli_query($con,$query);
-
-        print "Rows Affected: $rowsaffected";
-
-        if ( !empty($rowsaffected))
+      if (!empty($rowsaffected))
         {
-            echo "Added this record successfully!";
-
+            //Testing
+            //echo "$rowsaffected record was successfully added!";
         }else
-        {
-            echo "Inset Failed!";
-
-        }
-
+      {
+          // echo "Inset Failed!";
+      }
     }
 
 
 
-    /*getting the picture
-    if(isset($_FILES["file"]["type"]))
-    {
-        $validextensions = array("jpeg", "jpg", "png");
-        $temporary = explode(".", $_FILES["file"]["name"]);
-        $file_extension = end($temporary);
-
-        if ((($_FILES["file"]["type"] == "image/png") || ($_FILES["file"]["type"] == "image/jpg") || ($_FILES["file"]["type"] == "image/jpeg")) && in_array($file_extension, $validextensions)) {
-            if ($_FILES["file"]["error"] > 0)
-            {
-                echo "Return Code: " . $_FILES["file"]["error"] . "<br/><br/>";
-            }
-            else
-            {
-                if (file_exists("images/" . $_FILES["file"]["name"])) {
-                    echo $_FILES["file"]["name"] . " <span id='invalid'><b>already exists.</b></span> ";
-                }
-                else
-                {
-                    $sourcePath = $_FILES['file']['tmp_name']; // Storing source path of the file in a variable
-                    $targetPath = "images/".$_FILES['file']['name']; // Target path where file is to be stored
-                    move_uploaded_file($sourcePath,$targetPath) ; // Moving Uploaded file
-
-                    foreach($_FILES as $key=>$val){
-                        // Here $val is also array like ["Hello World 1 A","Hello World 1 B"], and so on
-                        // And $key is index of $array array (ie,. 0, 1, ....)
-                        echo "key $key";
-
-                        foreach($val as $k=>$v){
-                            // $v is string. "Hello World 1 A", "Hello World 1 B", ......
-                            // And $k is $val array index (0, 1, ....)
-                            echo "value:$v . <br />";
-                        }
-                    }
-
-
-                    echo "<span id='success'>Image Uploaded Successfully...!!</span><br/>";
-                    echo "<br/><b>File Name:</b> " . $_FILES["file"]["name"] . "<br>";
-                    echo "<b>Type:</b> " . $_FILES["file"]["type"] . "<br>";
-                    echo "<b>Size:</b> " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-                    echo "<b>Temp file:</b> " . $_FILES["file"]["tmp_name"] . "<br>";
-                }
-            }
-        }
-        else
-        {
-            echo "<span id='invalid'>***Invalid file Size or Type***<span>";
-        }
-    }
-*/
-
-
-/*
-$name = $_POST['name'];
-    $category = $_POST['category'];
-    $price = $_POST['price'];
-    $quantity = $_POST['quantity'];
-    $imagepath = $_POST['imagepath'];
-
-    foreach($_POST  as $key => $value)
-    {
-        echo "$key -> $value";
-    }
-
-    //Validation
-
-
-
-    $query = "INSERT INTO products(Name,Cateogry,Price,Qty,ImagePath) values('$name','$category',$price',$quantity,'$imagepath')";
-
-    print "<br/>";
-    print $query;
-
-    $database = new DbConnection('zenit.senecac.on.ca', 'uli705_173a29', 'crtw9356', 'uli705_173a29');
-
-    print "<br/>";
-    print $database;
-
-   $var = $database->OpenConnection();
-
-    print "<br/>";
-    print "$var";
-
-    $rslt = $database->ExecuteUpdateInsertDelete();
-
-    print "$var";
-    echo "$rslt inserted Succesfull";
-*/
 }
 ?>
 
@@ -214,7 +149,7 @@ $name = $_POST['name'];
                     <table>
                         <tr>
                             <td class="headertext">Name</td>
-                            <td class="td-element"><input type="text" name="name" placeholder="eg. MacBook Pro"/></td>
+                            <td class="td-element"><input type="text" name="name" placeholder="eg. MacBook Pro"/> <span class="required">*</span></td>
                         </tr>
                         <tr>
                             <td class="headertext">Category</td>
@@ -233,15 +168,15 @@ $name = $_POST['name'];
                         </tr>
                         <tr>
                             <td class="headertext">Price</td>
-                            <td class="td-element"><input type="text" name="price" placeholder="eg. 1999"/></td>
+                            <td class="td-element"><input type="text" name="price" placeholder="eg. 1999"/> <span class="required">*</span></td>
                         </tr>
                         <tr>
                             <td class="headertext">Quantity Instock</td>
-                            <td class="td-element"><input type="text" name="quantity" placeholder="eg. 25"/></td>
+                            <td class="td-element"><input type="text" name="quantity" placeholder="eg. 25"/> <span class="required">*</span> </td>
                         </tr>
                         <tr>
                             <td class="headertext">Picture</td>
-                            <td class="td-element"><input type="file" value="Upload Picture"/><br/>
+                            <td class="td-element"><input type="file" value="Upload Picture" name="file"/> <br/>
                             </td>
                         </tr>
                         <tr>

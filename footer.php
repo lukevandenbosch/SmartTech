@@ -14,7 +14,7 @@ $var ='
         </div>
     </div>
 </div>
-<p style="text-align:center" class="copyright">Smart Tech Copyright &copy; " . date("Y") . " SmartTech.com</p>
+<p style="text-align:center" class="copyright">Smart Tech Copyright &copy; '. date("Y") . ' SmartTech.com</p>
 </div>';
 
 
