@@ -1026,3 +1026,17 @@ iframe {
 {
     color: #ffffff;
 }
+
+.success
+{
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #008000;
+}
+
+.error
+{
+    background-color: red;
+    color: #ffffff;
+    font-weight: bold;
+}
