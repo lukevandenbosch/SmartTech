@@ -6,13 +6,38 @@
  * Time: 12:25 PM
  */
 
+//Declare generic class for storing  query results (rows)
+
+class QueryResult {
+
+    private $_results = array();
+
+    //default constructor
+    public function __construct(){}
+
+    //setting field values
+    public function __set($field,$value){
+        $this->_results[$field] = $value;
+    }
+
+    //retrieving a field value by name
+    public function __get($field){
+        if (isset($this->_results[$field])){
+            return $this->_results[$field];
+        }
+        else{
+            return null;
+        }
+    }
+}
+
 class MySQLConnection
 {
-    var $_host = "db-mysql.zenit";    // Host name.
-    var $_db_user = "uli705_081a34";  // MySQL username.
-    var $_db_password = "11111111";     // MySQL password.
-    var $_database = "uli705_173a20";   // Database name.
-    var $_port = "3306";   // Database Port.
+    var $_host ;    // Host name.
+    var $_db_user ; // MySQL username.
+    var $_db_password ;    // MySQL password.
+    var $_database ;   // Database name.
+    var $_port ;   // Database Port.
     var $_dbh = null;
 
 
@@ -81,21 +106,51 @@ class MySQLConnection
 
     public function Select_Query($query)
     {
-        print "$query";
+        //print "$query";
         $rows = null;
-        $result =mysqli_query($this->_dbh,$query);
+        $data =mysqli_query($this->_dbh,$query);
 
-        if ($result) {
-            $rows = mysqli_fetch_assoc($result);
-            return $rows;
+        //check if there is a result set
+        if ($data) {
+
+              //create array to store results
+             $results = array();
+
+             //loop through resultset
+            while ($row = mysqli_fetch_array($data)){
+
+                //instaniate array object which will be used to stored record set.
+                $result = new QueryResult();
+
+                //assignmnet the returned rows to array.
+                foreach ($row as $k=>$v){
+                    $result->$k = $v;
+                }
+
+                //update the arrary object with the resultset.
+                $results[] = $result;
+
+
         }
-        return null;
+        //print_r($results);
+        return $results;
+
+    }else //no results
+        {
+            return null;
+        }
     }
     public function ExecuteUpdateInsertDelete($query)
     {
+        //print "$query";
+
         $rows = null;
-        $rows_affected = mysqli_query( $this->_dbh,$query);
-        if ($rows_affected) {
+
+        //store execution results.
+        $results = mysqli_query( $this->_dbh,$query);
+
+        //there are results return the number of rows affected.
+        if ($results) {
             //get rows affected
            return  mysqli_affected_rows($this->_dbh);
         }

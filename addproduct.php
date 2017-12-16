@@ -2,7 +2,7 @@
 
 //Include database class
 include "inc/MySQLConnection.php";
-$uploaddir = '/home/peterrobinson/public_html/LP-Tech/images/';
+$uploaddir = 'images/';
 
 
 /*
