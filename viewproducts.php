@@ -53,7 +53,7 @@ echo ini_get('display_errors');
         //Filter and Create headings per category
         foreach($categories as $category)
         {
-            print '<tr><td colspan="3"><div class="categoryheadingbackground">'.$category.'</div></td></tr>';
+            print '<tr><td colspan="3"><div class="categoryheadingbackground"><a name="'.$category.'">'.$category.'</a></div></td></tr>';
             $rowbyCateogry = array();
 
 
@@ -68,20 +68,22 @@ echo ini_get('display_errors');
 
         foreach ($rowbyCateogry as $row)
         {
-
+            setlocale(LC_MONETARY, 'en_US');
 
              print '<tr>';
                 print '
                         <td><img src="'. $row->ImagePath.'" class="picture1"   alt="'.$row->Name.'"></td>
                         <td class="td-align-right"><p class="nopadding">                        
+                            Product Id:</br>
                             Product:</br>
                             Price:<br/>
                             Quantity Instock:</br>
                             &nbsp;<br/>
                          </p></td>'
                         .'<td class="td-align-left"><p class="nopadding">'
+                             .$row->Id.'<br/>'
                              .$row->Name.'<br/>'
-                             .$row->Price.'<br/>'
+                             .money_format('%(#10n',$row->Price).'<br/>'
                              .$row->Qty.'<br/>'
                             .'<a href="'.$row->ImagePath.'">Large</a> | <a href="deleteproduct.php?id='.$row->Id.'">Removed Products </a>'
                         .'</p></td>';

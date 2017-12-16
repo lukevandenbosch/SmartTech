@@ -20,16 +20,11 @@ echo ini_get('display_errors');
 if ($_SERVER['REQUEST_METHOD'] == 'GET') //to check if there was a post.
 
     {
-
-
-
-        $id = $_POST['id'];
+     $id = $_GET['id'];
 
     //Database Access
 
      $connection = new MySQLConnection("default");  //Peter Database
-    //$connection = new MySQLConnection("peter");  //Peter Database
-    //$connection = new MySQLConnection("luke");  //Peter Database
 
     //Opening the db Connection
     $state = $connection->OpenConnection();
@@ -83,17 +78,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') //to check if there was a post.
     <section id="main-content">
         <!--Main content Menu -->
 
+        <hr>
+        <h2>Product Deletion</h2>
+        <hr>
         <?php
 
 
             if ($_SERVER['REQUEST_METHOD'] == 'GET') //to check if there was a post.
             {
                 if($rowsaffected) {
-                    echo "<p class =\"success\">The product was succesfully deleted. $rowsaffected record added. </p>";
+                    echo "<p class =\"success\">The Product id <strong>$id</strong> was succesfully deleted. $rowsaffected record added. </p>";
+
                 }else
                 {
-                    echo "<p class =\"error\">Deleting product failed. </p>";
+                    echo "<p class =\"error\">Deleting Product  with id <strong>$id</strong> failed. </p>";
                 }
+
+                echo "<hr><br/><a href=\"viewproducts.php\"> <strong>Back to Products</strong></a><br/>";
             }
 
 
