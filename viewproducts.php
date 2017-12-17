@@ -54,7 +54,7 @@
         //Filter and Create headings per category
         foreach($categories as $category)
         {
-            print '<tr><td colspan="3"><div class="categoryheadingbackground"><a name="'.$category.'">'.$category.'</a></div></td></tr>';
+            print '<tr><td colspan="3"><div class="categoryheadingbackground"><a id="'.str_replace(" ","",$category).'">'.$category.'</a></div></td></tr>';
             $rowbyCateogry = array();
 
 
@@ -75,10 +75,10 @@
                 print '
                         <td><img src="'.$image.'" class="picture1"   alt="'.$row->Name.'"></td>
                         <td class="td-align-right"><p class="nopadding">                        
-                            Product Id:</br>
-                            Product:</br>
+                            Product Id:<br/>
+                            Product:<br/>
                             Price:<br/>
-                            Quantity Instock:</br>
+                            Quantity Instock:<br/>
                             &nbsp;<br/>
                          </p></td>'
                         .'<td class="td-align-left"><p class="nopadding">'

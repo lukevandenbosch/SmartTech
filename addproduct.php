@@ -162,7 +162,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') //to check if there was a post.
     <!--Main content Menu -->
     <section id="main-content">
         <!--Main content Menu -->
-        <section id="addform">
+        <section id="section-addform">
             <hr>
             <h2>Adding New Products</h2>
 
@@ -218,7 +218,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') //to check if there was a post.
                         </tr>
                         <tr>
                             <td class="headertext">Picture</td>
-                            <td class="td-element"><input type="file" value="Upload Picture" name="file"/> <br/>
+                            <td class="td-element"><input type="file"  name="file"/> <br/>
                             </td>
                         </tr>
                         <tr>
