@@ -1,0 +1,75 @@
+
+<html>
+<head>
+<title>
+uli705_173a20
+</title>
+</head>
+
+
+<h3>Seneca College of Applied Arts & Technology</h3>
+
+<h4 style="color:#ff1493; font-weight: bold;">Welcome to uli705_173a20's Web Site</h4>
+
+<br/>
+
+<body background-color="blue">
+<h1>Course Description</h1>
+
+
+
+
+
+<div class="jumbotron text-center">
+ 
+  <p>Web Programming Lab Exercises!</p>
+  <!--<a href="uli705_173a20.pdf" alt="My Products"> <p>My Store </p> </a>-->
+</div>
+
+
+
+<table border ="2">
+
+		<tr>
+      		<th>Lab/Assignment</th>
+			<th>Due Date</th>
+			<th>Descripton</th>
+		</tr>
+	  
+	   <tr>
+		   <td>Lab 6</td>
+	   		<td></td>
+			<td></td>
+	   </tr>
+	<tr>
+		<td>Lab 7</td>
+		<td></td>
+		<td></td>
+	</tr>
+
+	<tr>
+		<td><a href="index.php">Assignment 2</a></td>
+		<td>Dec 9 2017</td>
+		<td></td>
+	</tr>
+
+
+	<tr>
+		<td><a href="index.php">Assignment 2</a></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+<br/>
+<h1> Hubblies:</h1>
+<ul>
+	<li>Programming</li>
+	<li>Working out in the GYM</li>
+	<li>Football</li>
+</ul>
+<img src="image.jpg" alt="me" />
+
+
+</body>
+</html> 
