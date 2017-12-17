@@ -69,10 +69,10 @@ echo ini_get('display_errors');
         foreach ($rowbyCateogry as $row)
         {
             setlocale(LC_MONETARY, 'en_US');
-
+            $image = strlen(trim($row->ImagePath))==0 ? "images/placeholder.jpg":$row->ImagePath;
              print '<tr>';
                 print '
-                        <td><img src="'. $row->ImagePath.'" class="picture1"   alt="'.$row->Name.'"></td>
+                        <td><img src="'.$image.'" class="picture1"   alt="'.$row->Name.'"></td>
                         <td class="td-align-right"><p class="nopadding">                        
                             Product Id:</br>
                             Product:</br>
@@ -85,7 +85,7 @@ echo ini_get('display_errors');
                              .$row->Name.'<br/>'
                              .money_format('%(#10n',$row->Price).'<br/>'
                              .$row->Qty.'<br/>'
-                            .'<a href="'.$row->ImagePath.'">Large</a> | <a  href="deleteproduct.php?id='.$row->Id.'"><span style="color:#f4a024;">Removed Products</span> </a>'
+                            .'<a href="'.$image.'">Large</a> | <a  href="deleteproduct.php?id='.$row->Id.'"><span style="color:#f4a024;">Removed Products</span> </a>'
                         .'</p></td>';
              print '</tr>';
 

@@ -40,19 +40,6 @@ class MySQLConnection
     var $_port ;   // Database Port.
     var $_dbh = null;
 
-
-/*
-    public function __construct($host, $db_user, $db_password, $database)
-    {
-        $this->_host = $host;
-        $this->_db_user = $db_user;
-        $this->_db_password = $db_password;
-        $this->_database = $database;
-        $this->_dbh = null;
-        echo "Host: $host";
-    }
-*/
-
     public function __construct($connection ="default")
     {
         //'zenit.senecac.on.ca', 'uli705_173a29', 'crtw9356', 'uli705_173a29'
@@ -85,6 +72,7 @@ class MySQLConnection
 
     }
 
+    //This method is used to open a database connection
     public function OpenConnection()
     {
 
