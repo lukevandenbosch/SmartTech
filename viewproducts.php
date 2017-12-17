@@ -85,7 +85,7 @@ echo ini_get('display_errors');
                              .$row->Name.'<br/>'
                              .money_format('%(#10n',$row->Price).'<br/>'
                              .$row->Qty.'<br/>'
-                            .'<a href="'.$row->ImagePath.'">Large</a> | <a href="deleteproduct.php?id='.$row->Id.'">Removed Products </a>'
+                            .'<a href="'.$row->ImagePath.'">Large</a> | <a  href="deleteproduct.php?id='.$row->Id.'"><span style="color:#f4a024;">Removed Products</span> </a>'
                         .'</p></td>';
              print '</tr>';
 

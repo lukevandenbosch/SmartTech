@@ -27,11 +27,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') //to check if there was a post.
     $_isvalid=true;
     $validation_message="";
 
+       //Handing Image Upload
 
-
-    //Handing Image Upload
-
-    if ((($_FILES["file"]["type"] == "image/png") || ($_FILES["file"]["type"] == "image/jpg") || ($_FILES["file"]["type"] == "image/jpeg")) && in_array($file_extension, $validextensions)) {
+    //checking if a file is present
+    if(strlen(trim($_FILES["file"]["name"]))== 0)
+    {
+        //if no image is provided used the place holder image.
+        $uploadfile = "images/placeholder.jpg";
+    }
+    else  if ((($_FILES["file"]["type"] == "image/png") || ($_FILES["file"]["type"] == "image/jpg") || ($_FILES["file"]["type"] == "image/jpeg")) && in_array($file_extension, $validextensions)) {
 
         if ($_FILES["file"]["error"] > 0) {
             echo "Return Code: " . $_FILES["file"]["error"] . "<br/><br/>";
@@ -40,9 +44,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') //to check if there was a post.
             if (file_exists("images/" . $_FILES["file"]["name"])) {
 
                 //set validation data
-                $_isvalid=false;
+                //if the that will be uploaded already exists. The default placeholder file will be used.
+               // $_isvalid=false;
+                $_isvalid=true;
                 $file = $_FILES['file']['name'];
-                $validation_message =  $validation_message. "$file already exists. Please change the name of the file or choose another file.";
+                $validation_message =  $validation_message. "$file already exists. the default placeholder file will be used.";
+                $uploadfile = "images/placeholder.jpg";
+
             } else {
                 if (move_uploaded_file($_FILES['file']['tmp_name'], $uploadfile)) {
 

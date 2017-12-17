@@ -19,31 +19,63 @@ echo ini_get('display_errors');
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') //to check if there was a post.
 
-    {
-     $id = $_GET['id'];
+{
+    $id = $_GET['id'];
 
     //Database Access
 
-     $connection = new MySQLConnection("default");  //Peter Database
+    $connection = new MySQLConnection("default");  //Peter Database
 
     //Opening the db Connection
     $state = $connection->OpenConnection();
 
 
-    if($state) //if connection is succesfull proceed with getting the informatin from the form and writing to the db.
+    if ($state) //if connection is succesfull proceed with getting the informatin from the form and writing to the db.
     {
+        $image = array();
+        try {
+
+            //get image path from table before the record is deleted.
+            $query = "SELECT ImagePath FROM products WHERE  id =$id";
+            $image = $connection->Select_Query($query);
+            //print_r($image);
+
+        } catch (Exception $e) {
+        }
 
         $query = "DELETE FROM products WHERE  id =$id";
         $rowsaffected = $connection->ExecuteUpdateInsertDelete($query);
 
-      if (!empty($rowsaffected))
-        {
-            //Testing
-            //echo "$rowsaffected record was successfully added!";
-        }else
-      {
-          // echo "Inset Failed!";
-      }
+        if (!empty($rowsaffected)) {
+
+            //deleting the image from the file system.
+
+            try {
+
+                //if the record was deleted proceed with deleting the image from the file system.
+                //check results.
+                if ($image) {
+                    foreach ($image as $img) {
+                        //skip placeholder image.
+                        if ($img->ImagePath != 'images/placeholder.jpg') {
+
+                            //build command to rm images
+                            $cmd = "rm " . $img->ImagePath;
+                            echo "$cmd";
+                            shell_exec($cmd);
+                        }
+                    }
+
+                }
+
+
+            } catch (Exception $e) {
+
+            }
+
+        } else {
+            // echo "Inset Failed!";
+        }
     }
 
 
