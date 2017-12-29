@@ -1,12 +1,14 @@
 <?php include "inc/MySQLConnection.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Smart Tech Supplies</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="scripts/css/theme.css">
     <style></style>
+    <script src="scripts/js/validate_utility.js"></script>
 </head>
 <body>
 
@@ -48,17 +50,24 @@
         $state = $connection->OpenConnection();
         //print_r($state);
 
-
+        //Creating an array with a list of category. These are the same categories that are stored within the drop down box on the add product page.
         $categories = array('Laptop','Printers','Desktop','External','Flash Drives','HeadPhone','Monitor','Projectors','Speakers','Tablets');
+
+        //building query to determine the amount of product instock for each product category.
         $query = "SELECT sum(Qty) as Available,Category  FROM products group by Category; ";
+
+        //Executing query by calling the  Data Acess class.
         $rows = $connection->Select_Query($query);
+
         $available = array();
+
         if($rows)
         {
 
-        $categories = array('Laptop','Printers','Desktop','External','Flash Drives','HeadPhone','Monitor','Projectors','Speakers','Tablets');
 
-        //Determing the number of products in stock per category
+        //$categories = array('Laptop','Printers','Desktop','External','Flash Drives','HeadPhone','Monitor','Projectors','Speakers','Tablets');
+
+        //Determining the number of products in stock per category
         foreach($categories as $category) {
             foreach ($rows as $row) {
                 if($row->Category ==$category)
@@ -70,14 +79,20 @@
         }
 
         ?>
+        <!--
+        The following are the method function carried out in the below sections.
+        1. Using achor tag to navigation to the section on the display page where the specific product category is located.
+        2. Checking if there are available products for each category and then output the number of product in stock for that category.
+        -->
 
         <table id="actual-table">
             <tr>
                 <td>
 
+                    <!--Using achor tag to navigation to the section on the display page where the specific product category is located.-->
                         <a href="viewproducts.php#Desktop" class="aligncenter" aria-hidden="true">
                         <img src="images/categories/desktop.jpg" alt="Desktop"   width="500" height="300" />
-                            <div class = "categoryheadingbackground" >
+                            <div class = "categoryheadingbackground" > <!--Checking if there are available products for each category and then output the number of product in stock for that category. -->
                                 Desktop PCS(<span class="available-products"><?php echo count($available)!=0  ? array_key_exists("Desktop",$available) ? $available["Desktop"] : "0": "0"; ?></span>)
                             </div>
                         </a>
@@ -165,9 +180,12 @@
 
 
     <section id="footer">
-        <?php include 'footer.php';?>
+        <?php include 'footer.php'; ?>
     </section>
 </div>
+<script>
+    Message("Peter");
+</script>
 </body>
 </html>
 

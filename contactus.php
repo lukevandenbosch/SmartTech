@@ -4,11 +4,12 @@
     <title>Smart Tech Supplies</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="scripts/css/theme.css">
     <style></style>
 </head>
 <body>
 <div class="container">
+
 <section id="header">
     <?php include 'header.php'; ?>
 </section>

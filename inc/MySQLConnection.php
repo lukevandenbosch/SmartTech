@@ -31,6 +31,9 @@ class QueryResult {
     }
 }
 
+/*
+ * This is created  for the data access later to handle data access functionality.
+ */
 class MySQLConnection
 {
     var $_host ;    // Host name.
@@ -79,13 +82,16 @@ class MySQLConnection
         // Connect to database server.
         $con = mysqli_connect($this->_host, $this->_db_user, $this->_db_password, $this->_database);
 
-        // Check connection
+
+        // Check  if there are any connection errors
         if (mysqli_connect_errno()) {
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
         } else {
 
+
+            //setting the connection pointer
             $this->_dbh = $con;
-            //print_r($this->_dbh);
+
         }
         return $this->_dbh;
     }
@@ -94,23 +100,24 @@ class MySQLConnection
 
     public function Select_Query($query)
     {
-        //print "$query";
+
+        //This is a generic method that is used to execute select queries and return the results.
         $rows = null;
         $data =mysqli_query($this->_dbh,$query);
 
-        //check if there is a result set
+        //check if there is a  data within the resultset.
         if ($data) {
 
-              //create array to store results
+              //declare array to store results
              $results = array();
 
-             //loop through resultset
+             //loop through resultset in order to store records in associative array.
             while ($row = mysqli_fetch_array($data)){
 
                 //instaniate array object which will be used to stored record set.
                 $result = new QueryResult();
 
-                //assignmnet the returned rows to array.
+                //assignment the returned rows to array using associative array.
                 foreach ($row as $k=>$v){
                     $result->$k = $v;
                 }
@@ -120,18 +127,19 @@ class MySQLConnection
 
 
         }
-        //print_r($results);
         return $results;
 
-    }else //no results
+    }else //if thera are no results, then return null.
         {
             return null;
         }
     }
+
+    /* This function is used to execute Insert and update and delete query
+    and also returns the rows affected by the operation if any.
+    */
     public function ExecuteUpdateInsertDelete($query)
     {
-        //print "$query";
-
         $rows = null;
 
         //store execution results.
@@ -142,6 +150,8 @@ class MySQLConnection
             //get rows affected
            return  mysqli_affected_rows($this->_dbh);
         }
+
+        //if there are no results it returns null.
         return null;
     }
 
