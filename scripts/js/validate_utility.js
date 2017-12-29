@@ -127,11 +127,10 @@ function subsription() {
 
     //retrieving value from textbox
      var email =document.getElementById('footer-email').value.toUpperCase();
-     alert(email);
+
 
      //regex validation
-    //var regex =/^[A-Za-z0-9]+([.][A-Za-z0-9]+)?@[A-Za-z0-9]{2,3}$/;
-    var regex =/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$/
+     var regex =/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$/;
 
 
     if (email.length == 0 || email=="" ) {

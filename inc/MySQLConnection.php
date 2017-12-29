@@ -63,7 +63,7 @@ class MySQLConnection
             $this->_database = "li705_173a29";
             $this->_dbh = null;
 
-        }else if ($connection =="peter-public")
+        }else if ($connection =="default" ) //eter-public")
         {
             $this->_host = "50.62.177.37";
             $this->_db_user = "senecauli";
