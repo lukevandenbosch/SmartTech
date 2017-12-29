@@ -48,6 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     {
 
         //if no image is provided used the place holder image.
+        $validationMessage =  $validationMessage."<li class=\"warn\"> Warning: since no image is was provided, the default placeholder file will be used.</li>";
         $fileToUpload = "images/placeholder.jpg";
     }
 
@@ -258,7 +259,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                     <table>
                         <tr>
                             <td class="headertext">Name</td>
-                            <td class="td-element"><input type="text" name="name" id="name"  placeholder="eg. MacBook Pro"/> <span class="required">*</span></td>
+                            <td class="td-element"><input type="text" name="name" id="name"  placeholder="eg. MacBook Pro"/> <span class="required">*</span><span  class="error" id="namevalmsg"></span></td>
                         </tr>
                         <tr>
                             <td class="headertext">Category</td>
@@ -277,11 +278,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
                         </tr>
                         <tr>
                             <td class="headertext">Price</td>
-                            <td class="td-element"><input type="text" name="price" id="price" placeholder="eg. 1999"/> <span class="required">*</span></td>
+                            <td class="td-element"><input type="text" name="price" id="price" placeholder="eg. 1999"/> <span class="required">*</span> <span  class="error" id="pricevalmsg"></span></td>
                         </tr>
                         <tr>
                             <td class="headertext">Quantity Instock</td>
-                            <td class="td-element"><input type="text" name="quantity" id="quantity" placeholder="eg. 25"/> <span class="required">*</span> </td>
+                            <td class="td-element"><input type="text" name="quantity" id="quantity" placeholder="eg. 25"/> <span class="required">*</span> <span  class="error" id="qtyvalmsg"></span></td>
                         </tr>
                         <tr>
                             <td class="headertext">Picture</td>

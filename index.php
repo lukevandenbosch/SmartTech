@@ -184,7 +184,6 @@
     </section>
 </div>
 <script>
-    Message("Peter");
 </script>
 </body>
 </html>

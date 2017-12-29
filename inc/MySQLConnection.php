@@ -45,14 +45,14 @@ class MySQLConnection
 
     public function __construct($connection ="default")
     {
-        //'zenit.senecac.on.ca', 'uli705_173a29', 'crtw9356', 'uli705_173a29'
+
         if($connection =="peter")
         {
             $this->_host = "db-mysql.zenit";
             $this->_db_user = "uli705_173a20";
             $this->_port = "3306";
             $this->_db_password = "csHE3669";
-            $this->_database = "li705_173a20";
+            $this->_database = "uli705_173a20";
             $this->_dbh = null;
 
         }else if($connection =="luke") {
@@ -63,13 +63,21 @@ class MySQLConnection
             $this->_database = "li705_173a29";
             $this->_dbh = null;
 
-        }else
+        }else if ($connection =="peter-public")
         {
             $this->_host = "50.62.177.37";
             $this->_db_user = "senecauli";
             $this->_port = "3306";
             $this->_db_password = "P@ssw0rd";
             $this->_database = "smarttech";
+            $this->_dbh = null;
+        }else //default
+        {
+            $this->_host = "db-mysql.zenit";
+            $this->_db_user = "uli705_173a20";
+            $this->_port = "3306";
+            $this->_db_password = "csHE3669";
+            $this->_database = "uli705_173a20";
             $this->_dbh = null;
         }
 
