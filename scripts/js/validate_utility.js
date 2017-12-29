@@ -4,7 +4,7 @@ function Message(var1) {
 
 function validateFields()
 {
-
+   var status =true;
     //fields to be validated.
     var price =document.getElementById('price').value;
     var quantity =document.getElementById('quantity').value;
@@ -15,15 +15,20 @@ function validateFields()
     var regexqty =/^[0-9]{1,1}|([1-9]|[0-9]){1,}$/;
 
     //Validate Blanks
-    blankFieldValidator(price,"Price");
-    blankFieldValidator(quantity,"Quantity");
+    isPriceBlank = blankFieldValidator(price,"Price");
+    isQuantityBlank =  blankFieldValidator(quantity,"Quantity");
+
+    /Validator Numeric format.
+    isPriceFormatInvalid = numericFieldValidator(price,"Price",regexprice);
+    IsQuanityFormatInvalid = numericFieldValidator(quantity,"Quantity",regexprice);
 
 
-    //Validator Numeric format.
-    numericFieldValidator(price,"Price",regexprice);
-    numericFieldValidator(quantity,"Quantity",regexprice);
-
-    return false;
+    //Check if all validation pass
+    if(isPriceBlank == false || IsQuanityFormatInvalid ==false || isPriceFormatInvalid ==false ||  IsQuanityFormatInvalid ==false )
+    {
+        status =false;
+    }
+    return status;
 }
 
 
@@ -33,6 +38,7 @@ function blankFieldValidator(field,fieldName) {
         alert("Field '" + fieldName + "' cannot be left empty. Please provide a value.");
         return false;
     }
+    return true;
 }
 
 function numericFieldValidator(fieldValue, fieldName, regex) {
@@ -70,4 +76,5 @@ function subsription() {
         alert("Your email '" + email + "' was verified. Thank you for subscribing to Inventory Alert.You will be notified on arrival of new stocks and will also receive alerts with the Inventory is low.");
         ;
     }
+    return true;
 }

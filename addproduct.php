@@ -254,7 +254,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             ?>
             <hr>
             <div id="updateproduct">
-                <form  id="addform" name="addform" method="POST" action="addproduct.php"  enctype="multipart/form-data">
+                <form  id="addform" name="addform" method="POST" action="addproduct.php"  enctype="multipart/form-data" onsubmit="return validateFields()">
                     <table>
                         <tr>
                             <td class="headertext">Name</td>
@@ -292,7 +292,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
                             <td colspan="2">
                                 <hr>
-                                <input type="submit" value="Add Product" onclick="validateFields()"/></td>
+                                <input type="submit" value="Add Product"/></td>
 
                         </tr>
                     </table>
